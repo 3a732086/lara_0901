@@ -34,7 +34,7 @@
                         <th width="30" style="text-align: center">#</th>
                         <th>標題</th>
                         <th width="70" style="text-align: center">精選？</th>
-                        <th width="100" style="text-align: center">功能</th>
+                        <th width="130" style="text-align: center">功能</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -46,10 +46,10 @@
                         <td>
                             <a class="btn btn-sm btn-primary" href="{{ route('admin.posts.edit', $post->id) }}">編輯</a>
                             /
-                            <form action="{{route('admin.posts.destory',$posts->id)}}" method="POST" style="display:inline">
+                            <form action="{{route('admin.posts.destroy',$post->id)}}" method="POST" style="display:inline">
                                 @method('delete')
                                 @csrf
-                            <button> class="btn btn-sm btn-danger" type="submit">刪除</button>
+                            <button class="btn btn-sm btn-danger" type="submit">刪除</button>
                             </form>
                         </td>
                     </tr>
