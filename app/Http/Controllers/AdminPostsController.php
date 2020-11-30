@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+use App\Models\Post;
 
 class AdminPostsController extends Controller
 {
@@ -27,6 +28,6 @@ class AdminPostsController extends Controller
 
     public function store()
     {
-        
+
     }
 }
